@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<!---------------->
+<!-- Start Head -->
+<!---------------->
+<head>
+  <!-- Start Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- End Meta Tags -->
+
+  <!-- Start Links -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+  <title>Booking-Panel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="calendar.css" />
+  <!-- End Links -->
+  <script src="./app.js" defer></script>
+</head>
+<!---------------->
+<!--- End Head --->
+<!---------------->
+
+<!---------------->
+<!-- Start Body -->
+<!---------------->
+<body>
+  <div class="form">
+    <div class="form-container">
+      <!--------------------->
+      <!-- Start List Bars -->
+      <!--------------------->
+      <div class="form-sidebar">
+        <div class="step active">
+          <div class="circle">1</div>
+          <div class="step-content">
+            <b>Staff</b>
+          </div>
+        </div>
+        <div class="step">
+          <div class="circle">2</div>
+          <div class="step-content">
+            <b>Service</b>
+          </div>
+        </div>
+        <div class="step">
+          <div class="circle">3</div>
+          <div class="step-content">
+            <b>Date & Time</b>
+          </div>
+        </div>
+        <div class="step">
+          <div class="circle">4</div>
+          <div class="step-content">
+            <b>Confirmation</b>
+          </div>
+        </div>
+      </div>
+      <!--------------------->
+      <!--- End List Bars --->
+      <!--------------------->
+
+      <!--------------------->
+      <!---- Start Staff ---->
+      <!--------------------->
+      <div class="stp step-1">
+        <div class="header">
+          <h1 class="title">Select staff</h1>
+        </div>
+        <!-- Start Select Form -->
+        <form class="form-selec-staff">
+          <!-- Start Card -->
+          <div class="plan-card selected">
+            <img src="./assets/images/alex.png" alt="arcade" />
+            <div class="staff1">
+              <h4>Alex Rosetta</h4>
+              <a href="mailto: alexyrosetta@egmail.com">alexyrosetta@egmail.com</a>
+            </div>
+          </div>
+          <!-- End Card -->
+
+          <!-- Start Card -->
+          <div class="plan-card">
+            <img src="./assets/images/maria.png" alt="arcade" />
+            <div class="staff1">
+              <h4>Maria July</h4>
+              <a href="mailto: mariajuly@egmail.com">mariajuly@egmail.com</a>
+            </div>
+          </div>
+          <!-- End Card -->
+        </form>
+        <!-- End Select Form -->
+
+        <!-- Start Next Button Bar-->
+        <div class="btns">
+          <button class="next-stp" type="submit">Next</button>
+        </div>
+        <!-- End Next Button Bar-->
+      </div>
+      <!--------------------->
+      <!----- End Staff ----->
+      <!--------------------->
+
+      <!--------------------->
+      <!--- Start Service --->
+      <!--------------------->
+      <div class="stp step-2">
+        <div class="header">
+          <h1 class="title">Select service</h1>
+        </div>
+        <!-- Start Service Form -->
+        <form>
+          <!-- Start Service Card -->
+          <div class="plan-card selected">
+            <div>
+              <img src="./assets/images/Ovals.svg" alt="arcade" />
+            </div>
+            <div class="plan-info chosen">
+              <div class="plan-info--left">
+                <b>Oral hygiene</b>
+                <span class="plan-priced">1 hour</span>
+              </div>
+            </div>
+            <div class="plan-info--spans">50$</div>
+          </div>
+          <!-- End Service Card -->
+
+          <!-- Start Service Card -->
+          <div class="plan-card">
+            <img src="./assets/images/Ovalss.svg" alt="arcade" />
+            <div class="plan-info">
+              <div class="plan-info--left">
+                <b>Implants</b>
+                <span class="plan-priced">1 hour 30 minutes</span>
+              </div>
+              <span class="plan-info--spans">120$</span>
+            </div>
+          </div>
+          <!-- End Service Card -->
+
+          <!-- Start Service Card -->
+          <div class="plan-card">
+            <img src="./assets/images/Ovalsss.svg" alt="arcade" />
+            <div class="plan-info">
+              <div class="plan-info--left">
+                <b>Check up</b>
+                <span class="plan-priced">1 hour 12 minutes</span>
+              </div>
+              <span class="plan-info--spans">140$</span>
+            </div>
+          </div>
+          <!-- End Service Card -->
+        </form>
+        <!-- End Service Form-->
+        <div class="btns">
+          <button class="prev-stp" type="button">Back</button>
+          <button class="next-stp" type="submit">Next</button>
+        </div>
+      </div>
+      <!------------------->
+      <!--- End Service --->
+      <!------------------->
+
+      <!-------------------->
+      <!-- Start Calendar -->
+      <!-------------------->
+      <div class="stp step-3">
+        <div class="header">
+          <h4 class="title">Select date & time</h4>
+        </div>
+        <!-- Start Calender -->
+        <div class="calendar">
+          <div class="wrapper">
+            <section>
+              <p class="current-date"></p>
+              <div class="icons">
+                <span id="prev" class="material-symbols-rounded">Left-</span>
+                <span id="next" class="material-symbols-rounded">-Right</span>
+              </div>
+            </section>
+            <div class="calendar">
+              <ul class="weeks">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+              </ul>
+              <ul class="days"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="btns">
+          <button class="prev-stp" type="button">Back</button>
+          <button class="next-stp" type="submit">Next</button>
+        </div>
+      </div>
+      <!-- Step 3 end -->
+      <!-- * Step 4 start -->
+      <div class="stp step-4">
+        <div class="header">
+          <h4 class="title">Confirm details</h4>
+        </div>
+        <div class="confirmsss">
+          <div class="datas">
+            <div class="dataUp">
+              <div class="datass">
+                <h6>First Name</h6>
+                <input type="text" required>
+              </div>
+              <div class="datass">
+                <h6>Last Name</h6>
+                <input type="text" required>
+              </div>
+            </div>
+            <div class="dataBottom">
+              <div class="datass">
+                <h6>E-mail</h6>
+                <input type="text" required>
+              </div>
+              <div class="datass">
+                <h6>Phone</h6>
+                <input type="text" required>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="selection-box">
+          <div class="selection-container">
+            <div class="selected-plan">
+              <p class="plan-name">Arcade(Monthly)</p>
+              <p class="plan-price">$9/mo</p>
+            </div>
+            <hr />
+            <div class="addons">
+              <template>
+                <div class="selected-addon">
+                  <span class="service-name">Online serivice</span>
+                  <span class="servic-price">+$1/mo</span>
+                </div>
+              </template>
+            </div>
+          </div>
+          <p class="total">Total (per month) <b>+$12/mo</b></p>
+        </div>
+        <div class="btns">
+          <button class="prev-stp" type="button">Back</button>
+          <button class="next-stp" type="submit">Next</button>
+        </div>
+      </div>
+      <!-- Step 4 end -->
+      <!-- Step 5 start -->
+      <div class="stp step-5">
+        <img src="./assets/images/icon-thank-you.svg" alt="" />
+        <div class="header">
+          <h1 class="title">Thank you!</h1>
+          <p class="exp">
+            Thanks for confirming your subscription!
+          </p>
+        </div>
+        <button class="next-stp"></button>
+      </div>
+      <!-- Step 5 end -->
+    </div>
+  </div>
+</body>
+<!---------------->
+<!--- End Body --->
+<!---------------->
+</html>
